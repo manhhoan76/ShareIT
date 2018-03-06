@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlrewrite>
+<rule>
+	        <from>^/(.*)/([0-9]+)/(.*)/([0-9]+).html$</from>
+	        <to>/detail?nid=$4</to>
+	 </rule>
+ 	<rule>
+	        <from>^/(.*)/([0-9]+)/([0-9]+).html$</from>
+	        <to>/cat?page=$3&amp;cid=$2</to>
+	 </rule>
+	<rule>
+	        <from>^/tim-kiem/(.*)/page/([0-9]+).html$</from>
+	        <to>/search?page=$2&amp;key=$1</to>
+	 </rule>
+	 <rule>
+	        <from>^/video/(.*)/([0-9]+).html$</from>
+	        <to>/video/detail?vid=$2</to>
+	 </rule>
+	 <rule>
+	        <from>^/video/([0-9]+).html$</from>
+	        <to>/video?page=$1</to>
+	 </rule>
+	 <rule>
+	        <from>^/trang-chu.html$</from>
+	        <to>/index</to>
+	 </rule>
+	  <rule>
+	        <from>^/video.html$</from>
+	        <to>/video</to>
+	 </rule>
+	 <rule>
+	        <from>^/tim-kiem.html$</from>
+	        <to>/search</to>
+	 </rule>
+	 <rule>
+	        <from>^/lien-he.html$</from>
+	        <to>/contact</to>
+	 </rule>
+	 <rule>
+	        <from>^/(.*)/([0-9]+).html$</from>
+	        <to>/cat?cid=$2</to>
+	 </rule>
+	
+</urlrewrite>
